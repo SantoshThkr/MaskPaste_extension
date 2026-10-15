@@ -1,0 +1,17 @@
+{
+  "name": "maskpaste",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Catch secrets before you share. A privacy-first Chrome extension that finds and redacts secrets in pasted text, locally.",
+  "type": "module",
+  "engines": {
+    "node": ">=22"
+  },
+  "scripts": {
+    "test": "node --test test/*.test.js",
+    "check": "node scripts/check.mjs",
+    "verify": "npm run check && npm test",
+    "test:browser": "node scripts/browser-smoke.mjs",
+    "icons": "node scripts/generate-icons.mjs"
+  }
+}
